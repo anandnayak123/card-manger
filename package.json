@@ -1,0 +1,21 @@
+{
+  "name": "card-tracker",
+  "version": "1.0.0",
+  "description": "Simple credit card limit & due-date tracker with basic user authentication",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "bcryptjs": "^2.4.3",
+    "nodemailer": "^6.9.14",
+    "node-cron": "^3.0.3",
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.5.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
