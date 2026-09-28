@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Card Tracker — Benefits</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1 class="brand small">💳 Card Tracker</h1>
+    <div class="topbar-right">
+      <a href="dashboard.html" class="btn ghost">← My Cards</a>
+      <button id="logoutBtn" class="btn ghost">Log Out</button>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <div class="dashboard-header">
+      <h2>Card Benefits</h2>
+    </div>
+    <p class="page-sub">Pick a category to see which of your cards offers what. Add or edit entries from the <strong>Benefits</strong> button on each card in <a href="dashboard.html">My Cards</a>.</p>
+
+    <div id="alertBox" class="alert" style="display:none;"></div>
+
+    <div class="category-grid" id="categoryGrid">
+      <button class="category-tile" data-category="discountsDeals"><span class="cat-icon">🏷️</span><span>Discounts &amp; Deals</span></button>
+      <button class="category-tile" data-category="cashback"><span class="cat-icon">💰</span><span>Cashback</span></button>
+      <button class="category-tile" data-category="entertainment"><span class="cat-icon">🎬</span><span>Entertainment</span></button>
+      <button class="category-tile" data-category="foodDining"><span class="cat-icon">🍽️</span><span>Food &amp; Dining</span></button>
+      <button class="category-tile" data-category="shopping"><span class="cat-icon">🛍️</span><span>Shopping</span></button>
+      <button class="category-tile" data-category="hotels"><span class="cat-icon">🏨</span><span>Hotels</span></button>
+    </div>
+
+    <section id="categoryResults" class="category-results" style="display:none;">
+      <h3 id="categoryResultsTitle"></h3>
+      <div id="categoryResultsBody"></div>
+    </section>
+  </main>
+
+  <script src="js/benefits.js"></script>
+</body>
+</html>

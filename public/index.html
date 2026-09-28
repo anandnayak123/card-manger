@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Card Tracker — Log In</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <h1 class="brand">💳 Card Tracker</h1>
+      <p class="tagline">Keep every card's limit and due date in one place.</p>
+
+      <div class="tabs">
+        <button id="tabLogin" class="tab active" type="button">Log In</button>
+        <button id="tabRegister" class="tab" type="button">Sign Up</button>
+      </div>
+
+      <div id="alertBox" class="alert" style="display:none;"></div>
+
+      <form id="loginForm" class="auth-form">
+        <label>Username
+          <input type="text" name="username" required autocomplete="username" />
+        </label>
+        <label>Password
+          <input type="password" name="password" required autocomplete="current-password" />
+        </label>
+        <button type="submit" class="btn primary full">Log In</button>
+      </form>
+
+      <form id="registerForm" class="auth-form" style="display:none;">
+        <label>Username
+          <input type="text" name="username" required autocomplete="username" minlength="3" maxlength="30" />
+        </label>
+        <label>Email <span class="hint">(due-date reminders are sent here)</span>
+          <input type="email" name="email" required autocomplete="email" />
+        </label>
+        <label>Password
+          <input type="password" name="password" required autocomplete="new-password" minlength="6" />
+        </label>
+        <button type="submit" class="btn primary full">Create Account</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
